@@ -1,0 +1,40 @@
+.card-cont {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 90vw;
+    justify-content: center;
+}
+
+.card {
+    width: 20em;
+    height: 33em;
+    border: 1px solid lightgray;
+    margin: 1em;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 12em;
+    width: 100%;
+    display: block;
+}
+
+.card-title {
+    margin: 0 0 .4em 0;
+}
+
+.card-body {
+    padding: .8em;
+    display: flex;
+    flex-direction: column;
+    height: 19em;
+}
+
+.card-description {
+    flex-grow: 1;
+}
