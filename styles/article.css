@@ -34,3 +34,31 @@
     font-style: italic;
     margin-bottom: .5em 0 1em 0;
 }
+
+blockquote {
+    color: gray;
+    border-top: .5px solid lightgray;
+    border-bottom: .5px solid lightgray;
+}
+
+@media only screen and (max-width: 420px) {
+    #article-cont {
+        padding: 2em 0;
+    }
+    #article-img, #article-content, #article-title {
+        width: 90vw;
+    }
+    #article-title {
+        font-size: 2em;
+    }
+    #article-description {
+        font-size: 1em;
+    }
+    #published_date {
+        font-size: .5em;
+    }
+    pre, pre code {
+        width: 85vw;
+        overflow-x: scroll;
+    }
+}
