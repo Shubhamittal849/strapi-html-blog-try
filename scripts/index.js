@@ -15,6 +15,9 @@ function fetchArticles() {
 function createArticleCard(article) {
     let card = document.createElement("div");
     card.classList.add("card");
+    card.onclick = () => {
+        window.location.replace(`/pages/article.html?id=${article.id}`)
+    };
 
     let cardImage = document.createElement("img");
     cardImage.classList.add("card-img");
@@ -46,12 +49,9 @@ function createArticleCard(article) {
         }
     });
 
-    cardBody.appendChild(articleTitle);
-    cardBody.appendChild(articleDescription);
-    cardBody.appendChild(articleTags);
+    cardBody.append(articleTitle, articleDescription, articleTags);
 
-    card.appendChild(cardImage);
-    card.appendChild(cardBody);
+    card.append(cardImage, cardBody);
 
     return card;
 }
