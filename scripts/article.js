@@ -40,9 +40,23 @@ function displayArticle(article) {
 
     document.getElementById("published_date").innerHTML = (new Date(article.published_at)).toDateString();
 
-    document.getElementById("article-cont").style = "display: flex;";
+    let articleTags = document.getElementById("article-tags");
+
+    let tag;
+
+    article.tags.forEach(tg => {
+        if (tg.name) {
+            tag = document.createElement("span")
+            tag.classList.add("article-tag");
+            tag.innerHTML = tg.name;
+
+            articleTags.appendChild(tag);
+        }
+    });
 
     document.getElementById("article-content").innerHTML = converter.makeHtml(article.content);
+
+    document.getElementById("article-cont").style = "display: flex;";
 }
 
 function showMissingArticleMsg(msg) {

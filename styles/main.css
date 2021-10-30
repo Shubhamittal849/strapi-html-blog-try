@@ -25,11 +25,12 @@ html, body, .container {
 }
 
 .article-tag {
-    border: .7px solid grey;
+    border: .7px solid lightgray;
     font-weight: 200;
     border-radius: 5px;
     padding: 3px 5px;
     margin: 2px 2px;
+    color: gray;
 }
 
 .site-title, .page-title {
