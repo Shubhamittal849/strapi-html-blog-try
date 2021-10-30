@@ -1,8 +1,10 @@
 #not-found {
+    width: 80vw;
     display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin: auto;
 }
 
