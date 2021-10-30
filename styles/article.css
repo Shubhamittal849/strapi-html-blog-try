@@ -1,0 +1,36 @@
+#not-found {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#article-cont {
+    display: none;
+    padding: 3em 0;
+}
+
+#article-img, #article-content, #article-title {
+    width: 60vw;
+}
+
+#article-title {
+    text-align: center;
+    font-size: 3.5em;
+    width: 75vw;
+    font-weight: bold;
+    margin: .7em 0 0 0;
+}
+
+#article-description {
+    margin: 0;
+    text-align: center;
+    font-weight: 200;
+}
+
+#published_date {
+    font-weight: 200;
+    font-style: italic;
+    margin-bottom: .5em 0 1em 0;
+}

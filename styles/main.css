@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,600;0,800;1,200&display=swap');
 html, body {
     height: 100%;
     width: 100%;
@@ -32,8 +32,9 @@ html, body, .container {
     margin: 2px 2px;
 }
 
-.site-title {
+.site-title, .page-title {
     font-size: 6em;
+    margin: 0;
 }
 
 .site-title .first {
@@ -44,17 +45,17 @@ html, body, .container {
     font-weight: lighter;
 }
 
-.site-description {
+.site-description, .page-subtitle {
     font-weight: 200;
     font-size: 2em;
     margin: 0 0 1.5em 0;
 }
 
 @media only screen and (max-width: 600px) {
-    .site-title {
+    .site-title, .page-title {
         font-size: 4em;
     }
-    .site-description {
+    .site-description, .page-subtitle {
         font-weight: 200;
         font-size: 1.6em;
         margin: 0 0 .8em 0;
@@ -65,10 +66,10 @@ html, body, .container {
     .container {
         width: 95vw;
     }
-    .site-title {
+    .site-title, .page-title {
         font-size: 2.5em;
     }
-    .site-description {
+    .site-description, .page-subtitle {
         font-size: 1em;
     }
 }
