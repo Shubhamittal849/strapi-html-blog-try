@@ -26,6 +26,7 @@
 
 .card-title {
     margin: 0 0 .4em 0;
+    font-size: 1.5em;
 }
 
 .card-body {
@@ -37,4 +38,39 @@
 
 .card-description {
     flex-grow: 1;
+}
+
+@media only screen and (max-width: 420px) {
+    .card {
+        width: 19em;
+        height: 33em;
+        margin: .8em 0;
+    }
+    .card-img {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        height: 11em;
+        width: 100%;
+        display: block;
+    }
+    .card-title {
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+    .card-body {
+        height: 22em;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .card {
+        width: 16em;
+        height: 36em;
+    }
+    .card-img {
+        height: 10em;
+    }
+    .card-body {
+        height: 26em;
+    }
 }

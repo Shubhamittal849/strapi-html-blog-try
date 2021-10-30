@@ -19,11 +19,17 @@ html, body, .container {
     padding: 4em 0;
 }
 
+.article-tag-cont {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .article-tag {
     border: .7px solid grey;
     font-weight: 200;
     border-radius: 5px;
     padding: 3px 5px;
+    margin: 2px 2px;
 }
 
 .site-title {
@@ -42,4 +48,27 @@ html, body, .container {
     font-weight: 200;
     font-size: 2em;
     margin: 0 0 1.5em 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .site-title {
+        font-size: 4em;
+    }
+    .site-description {
+        font-weight: 200;
+        font-size: 1.6em;
+        margin: 0 0 .8em 0;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .container {
+        width: 95vw;
+    }
+    .site-title {
+        font-size: 2.5em;
+    }
+    .site-description {
+        font-size: 1em;
+    }
 }
