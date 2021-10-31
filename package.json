@@ -3,5 +3,21 @@
   "version": "1.0.0",
   "description": "",
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zaracooper/editorial-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zaracooper/editorial-app/issues"
+  },
+  "homepage": "https://github.com/zaracooper/editorial-app#readme"
 }
