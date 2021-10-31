@@ -20,12 +20,8 @@ function getArticle(id) {
                 throw new Error(resp.statusText);
             }
         })
-        .then(article => {
-            displayArticle(article);
-        })
-        .catch(err => {
-            showMissingArticleMsg(err);
-        });
+        .then(displayArticle)
+        .catch(showMissingArticleMsg);
 }
 
 function displayArticle(article) {
