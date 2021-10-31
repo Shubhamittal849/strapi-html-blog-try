@@ -8,3 +8,12 @@ npm run dev
 ```
 
 The app will be available at `http://localhost:3000`.
+
+## Screenshots
+Here's a screenshot of the home page.
+
+![Home Page Screenshot](assets/images/editorial-home.png)
+
+Here's a screenshot of the article page. 
+
+![Article Page Screenshot](assets/images/editorial-post.png)
