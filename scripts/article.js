@@ -51,13 +51,16 @@ function displayArticle(article) {
         }
     });
 
-    document.getElementById("article-content").innerHTML = window.showdown.Converter().makeHtml(article.content);
+    const showdown = window.showdown;
+    const converter = new showdown.Converter();
 
-    document.getElementById("article-cont").style = "display: flex;";
+    document.getElementById("article-content").innerHTML = converter.makeHtml(article.content);
+
+    document.getElementById("article-cont").style = "display: flex; display: -webkit-box; display: -ms-flexbox;";
 }
 
 function showMissingArticleMsg(msg) {
-    document.getElementById("not-found").style = "display: flex;";
+    document.getElementById("not-found").style = "display: flex; display: -webkit-box; display: -ms-flexbox;";
     document.getElementById("err-msg").innerHTML = msg;
 }
 
