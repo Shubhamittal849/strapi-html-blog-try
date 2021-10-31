@@ -7,3 +7,4 @@ Before attempting to run this app, make sure your local instance of Strapi is ru
 npm run dev
 ```
 
+The app will be available at `http://localhost:3000`.
