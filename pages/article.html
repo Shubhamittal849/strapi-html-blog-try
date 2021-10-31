@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>Editorial Site</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏖</text></svg>">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/article.css">
+</head>
+
+<body>
+    <div id="header">
+        <div id="site-name">
+            <span>Editorial</span><span>Site</span>
+        </div>
+        <div id="home-button">
+            <a href="/">
+                <button>📖 Read Other Articles</button>
+            </a>
+        </div>
+    </div>
+    <div id="not-found">
+        <p class="page-title">Sorry!</p>
+        <p id="err-msg" class="page-subtitle"></p>
+    </div>
+    <div id="article-cont" class="container">
+        <img id="article-img">
+        <p id="article-title"></p>
+        <p id="article-description" class="page-subtitle"></p>
+        <p id="published_date"></p>
+        <div id="article-tags" class="article-tag-cont"></div>
+        <div id="article-content"></div>
+    </div>
+</body>
+
+<footer>
+    <script type="text/javascript" src="https://cdn.rawgit.com/showdownjs/showdown/1.9.1/dist/showdown.min.js"></script>
+    <script type="text/javascript" src="../scripts/article.js"></script>
+</footer>
+
+</html>

@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,600;0,800;1,200&display=swap');
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+html, body, .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    align-items: center;
+    width: 90vw;
+    margin: auto;
+    padding: 4em 0;
+}
+
+.article-tag-cont {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.article-tag {
+    border: .7px solid lightgray;
+    font-weight: 200;
+    border-radius: 5px;
+    padding: 3px 5px;
+    margin: 2px 2px;
+    color: gray;
+}
+
+.site-title, .page-title {
+    font-size: 6em;
+    margin: 0;
+}
+
+.site-title .first {
+    font-weight: bold;
+}
+
+.site-title .second {
+    font-weight: lighter;
+}
+
+.site-description, .page-subtitle {
+    font-weight: 200;
+    font-size: 2em;
+    margin: 0 0 1.5em 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .site-title, .page-title {
+        font-size: 4em;
+    }
+    .site-description, .page-subtitle {
+        font-weight: 200;
+        font-size: 1.6em;
+        margin: 0 0 .8em 0;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .container {
+        width: 95vw;
+    }
+    .site-title, .page-title {
+        font-size: 2.5em;
+    }
+    .site-description, .page-subtitle {
+        font-size: 1em;
+    }
+}

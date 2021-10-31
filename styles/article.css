@@ -1,0 +1,124 @@
+#header {
+    display: flex;
+    width: 95vw;
+    margin: 1em 0;
+}
+
+#header, #not-found {
+    align-self: center;
+}
+
+#site-name, #home-button {
+    flex-grow: 1;
+}
+
+#site-name {
+    font-size: 2.3em;
+}
+
+#site-name span:nth-child(1) {
+    font-weight: bold;
+}
+
+#site-name span:nth-child(2) {
+    font-weight: 200;
+}
+
+#home-button {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+#home-button button {
+    font-size: 1.1em;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: .2em;
+}
+
+#home-button button:hover {
+    background-color: black;
+    border: none;
+    color: white;
+}
+
+#not-found {
+    width: 80vw;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+}
+
+#article-cont {
+    display: none;
+    padding: 3em 0;
+}
+
+#article-img, #article-content, #article-title {
+    width: 60vw;
+}
+
+#article-title {
+    text-align: center;
+    font-size: 3.5em;
+    width: 75vw;
+    font-weight: bold;
+    margin: .7em 0 0 0;
+}
+
+#article-description {
+    margin: 0;
+    text-align: center;
+    font-weight: 200;
+}
+
+#published_date {
+    font-weight: 200;
+    font-style: italic;
+    margin-bottom: .5em 0 1em 0;
+}
+
+blockquote {
+    color: gray;
+    border-top: .5px solid lightgray;
+    border-bottom: .5px solid lightgray;
+}
+
+#article-tags {
+    margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 420px) {
+    #header, #not-found {
+        width: 90vw;
+    }
+    #site-name {
+        font-size: 1.1em;
+    }
+    #home-button button {
+        font-size: .5em;
+    }
+    #article-cont {
+        padding: 2em 0;
+    }
+    #article-img, #article-content, #article-title {
+        width: 90vw;
+    }
+    #article-title {
+        font-size: 2em;
+    }
+    #article-description {
+        font-size: 1em;
+    }
+    #published_date {
+        font-size: .5em;
+    }
+    pre, pre code {
+        width: 85vw;
+        overflow-x: scroll;
+    }
+}
