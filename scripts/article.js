@@ -1,6 +1,3 @@
-const showdown = window.showdown;
-const converter = new showdown.Converter();
-
 function checkForArticle() {
     const urlParams = new URLSearchParams(window.location.search);
     const articleId = urlParams.get('id');
@@ -54,7 +51,7 @@ function displayArticle(article) {
         }
     });
 
-    document.getElementById("article-content").innerHTML = converter.makeHtml(article.content);
+    document.getElementById("article-content").innerHTML = window.showdown.Converter().makeHtml(article.content);
 
     document.getElementById("article-cont").style = "display: flex;";
 }
