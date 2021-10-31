@@ -24,7 +24,7 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding-bottom: .7em;
+    padding-bottom: .8em;
 }
 
 .card-img {
@@ -41,7 +41,7 @@
 }
 
 .card-body {
-    padding: .8em;
+    padding: .8em .8em 0 .8em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

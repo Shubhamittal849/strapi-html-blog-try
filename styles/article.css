@@ -47,6 +47,7 @@
     background-color: transparent;
     border: 1px solid black;
     border-radius: .2em;
+    padding: .2em .4em;
 }
 
 #home-button button:hover {
